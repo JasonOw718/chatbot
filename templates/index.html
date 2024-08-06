@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Bot</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./static/css/styles.css"
+    />
+  </head>
+  <body>
+    <div class="chatbot-icon" id="chatbot-icon">🤖</div>
+
+    <div class="chat-container" id="chat-container">
+      <div class="chat-header">
+        Chat Bot
+        <button class="toggle-fullscreen" id="toggle-fullscreen">⛶</button>
+      </div>
+      <div class="chat-box" id="chat-box">
+        <div class="greeting-container">
+          <h1>Welcome to <span class="username">U-Pustaka</span></h1>
+          <h2>How can I help you today?</h2>
+          <div class="cards">
+            <div
+              class="card"
+              data-message="Provide general information about u-Pustaka."
+            >
+              <p>Provide general information about u-Pustaka.</p>
+              <div class="icon">📖</div>
+            </div>
+            <div
+              class="card"
+              data-message="Explain membership and access details for u-Pustaka."
+            >
+              <p>Explain membership and access details for u-Pustaka.</p>
+              <div class="icon">📝</div>
+            </div>
+            <div
+              class="card"
+              data-message="Describe the services and features offered by u-Pustaka."
+            >
+              <p>Describe the services and features offered by u-Pustaka.</p>
+              <div class="icon">💡</div>
+            </div>
+            <div
+              class="card"
+              data-message="Detail the content and resource management available on u-Pustaka."
+            >
+              <p>
+                Detail the content and resource management available on
+                u-Pustaka.
+              </p>
+              <div class="icon">📚</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="input-container">
+        <input
+          type="text"
+          class="input-box"
+          id="input-box"
+          placeholder="Ask me anything..."
+        />
+        <p id="recording-text"></p>
+        <div class="tooltip-container">
+          <button class="record-button" id="record-button"></button>
+          <div class="tooltip">Use microphone</div>
+        </div>
+        <div class="tooltip-container">
+          <button class="send-button" id="send-button"></button>
+          <div class="tooltip" id="send-tooltip">Send</div>
+        </div>
+      </div>
+    </div>
+    <script src="./static/js/app.js"></script>
+  </body>
+</html>
